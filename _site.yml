@@ -1,0 +1,10 @@
+name: "personal-website"
+output_dir: "."
+navbar:
+  title: "RNAseq-BRAF"
+  left:
+    
+    - text: "Clustering analysis"
+      href: de_analysis.html
+    - text: "Differential expression"
+      href: index.html
