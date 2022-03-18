@@ -1,0 +1,18 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SPCS1	signal peptidase complex subunit 1 [Source:HGNC Symbol;Acc:HGNC:23401]	679	11.361513137817383	0.017282693	Yes	
+row_1	INSM1	INSM transcriptional repressor 1 [Source:HGNC Symbol;Acc:HGNC:6090]	749	10.84358024597168	0.10196484	Yes	
+row_2	NKX6-1	NK6 homeobox 1 [Source:HGNC Symbol;Acc:HGNC:7839]	914	9.81940746307373	0.16669436	Yes	
+row_3	NEUROG3	neurogenin 3 [Source:HGNC Symbol;Acc:HGNC:13806]	1078	8.969270706176758	0.22426552	Yes	
+row_4	STXBP1	syntaxin binding protein 1 [Source:HGNC Symbol;Acc:HGNC:11444]	1116	8.787979125976562	0.29512256	Yes	
+row_5	PAX4	paired box 4 [Source:HGNC Symbol;Acc:HGNC:8618]	1392	7.700392723083496	0.32864484	Yes	
+row_6	PCSK1	proprotein convertase subtilisin/kexin type 1 [Source:HGNC Symbol;Acc:HGNC:8743]	1869	6.267177104949951	0.32623124	Yes	
+row_7	SRP14	signal recognition particle 14 [Source:HGNC Symbol;Acc:HGNC:11299]	2314	5.290290355682373	0.31922498	Yes	
+row_8	PAK3	p21 (RAC1) activated kinase 3 [Source:HGNC Symbol;Acc:HGNC:8592]	2580	4.768133640289307	0.3288284	Yes	
+row_9	PDX1	pancreatic and duodenal homeobox 1 [Source:HGNC Symbol;Acc:HGNC:6107]	3083	3.928252696990967	0.30333486	No	
+row_10	SRP9	signal recognition particle 9 [Source:HGNC Symbol;Acc:HGNC:11304]	3529	3.335256814956665	0.27947822	No	
+row_11	ABCC8	ATP binding cassette subfamily C member 8 [Source:HGNC Symbol;Acc:HGNC:59]	3906	2.847783327102661	0.25957468	No	
+row_12	SCGN	"secretagogin, EF-hand calcium binding protein [Source:HGNC Symbol;Acc:HGNC:16941]"	3979	2.766916036605835	0.27477747	No	
+row_13	VDR	vitamin D receptor [Source:HGNC Symbol;Acc:HGNC:12679]	4533	-2.477121591567993	0.2308584	No	
+row_14	FOXA2	forkhead box A2 [Source:HGNC Symbol;Acc:HGNC:5022]	5072	-3.121117353439331	0.1942175	No	
+row_15	SYT13	synaptotagmin 13 [Source:HGNC Symbol;Acc:HGNC:14962]	6856	-6.58750057220459	0.04063593	No	
+row_16	SEC11A	"SEC11 homolog A, signal peptidase complex subunit [Source:HGNC Symbol;Acc:HGNC:17718]"	8261	-17.96786117553711	0.029086206	No	

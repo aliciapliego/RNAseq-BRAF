@@ -1,0 +1,36 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	ALCAM	activated leukocyte cell adhesion molecule [Source:HGNC Symbol;Acc:HGNC:400]	24	33.280120849609375	0.08924559	No	
+row_1	NIBAN1	niban apoptosis regulator 1 [Source:HGNC Symbol;Acc:HGNC:16784]	424	13.807677268981934	0.080362774	No	
+row_2	CXCL16	C-X-C motif chemokine ligand 16 [Source:HGNC Symbol;Acc:HGNC:16642]	1100	8.864279747009277	0.025232611	No	
+row_3	FABP5	fatty acid binding protein 5 [Source:HGNC Symbol;Acc:HGNC:3560]	1199	8.412456512451172	0.03694299	No	
+row_4	HMGCS1	3-hydroxy-3-methylglutaryl-CoA synthase 1 [Source:HGNC Symbol;Acc:HGNC:5007]	2346	5.2353057861328125	-0.08380942	No	
+row_5	ATF3	activating transcription factor 3 [Source:HGNC Symbol;Acc:HGNC:785]	2430	5.074633598327637	-0.07956384	No	
+row_6	ACAT2	acetyl-CoA acetyltransferase 2 [Source:HGNC Symbol;Acc:HGNC:94]	2588	4.748008728027344	-0.08495455	No	
+row_7	ACTG1	actin gamma 1 [Source:HGNC Symbol;Acc:HGNC:144]	2673	4.581570625305176	-0.08219116	No	
+row_8	CTNNB1	catenin beta 1 [Source:HGNC Symbol;Acc:HGNC:2514]	3255	3.677701234817505	-0.14057854	No	
+row_9	GNAI1	G protein subunit alpha i1 [Source:HGNC Symbol;Acc:HGNC:4384]	4051	2.6742029190063477	-0.22699606	No	
+row_10	MAL2	"mal, T cell differentiation protein 2 [Source:HGNC Symbol;Acc:HGNC:13634]"	4527	-2.4750936031341553	-0.2762019	No	
+row_11	DHCR7	7-dehydrocholesterol reductase [Source:HGNC Symbol;Acc:HGNC:2860]	4836	-2.820343255996704	-0.3047452	No	
+row_12	MVD	mevalonate diphosphate decarboxylase [Source:HGNC Symbol;Acc:HGNC:7529]	4858	-2.838214874267578	-0.29937074	No	
+row_13	ABCA2	ATP binding cassette subfamily A member 2 [Source:HGNC Symbol;Acc:HGNC:32]	4964	-2.9723451137542725	-0.30353785	No	
+row_14	TM7SF2	transmembrane 7 superfamily member 2 [Source:HGNC Symbol;Acc:HGNC:11863]	5290	-3.4078803062438965	-0.33246168	No	
+row_15	GPX8	glutathione peroxidase 8 (putative) [Source:HGNC Symbol;Acc:HGNC:33100]	5411	-3.6039352416992188	-0.33665147	No	
+row_16	TP53INP1	tumor protein p53 inducible nuclear protein 1 [Source:HGNC Symbol;Acc:HGNC:18022]	6000	-4.567255973815918	-0.39340374	No	
+row_17	GSTM2	glutathione S-transferase mu 2 [Source:HGNC Symbol;Acc:HGNC:4634]	6485	-5.6042327880859375	-0.4350141	Yes	
+row_18	CHKA	choline kinase alpha [Source:HGNC Symbol;Acc:HGNC:1937]	6532	-5.742844581604004	-0.42455345	Yes	
+row_19	LGALS3	galectin 3 [Source:HGNC Symbol;Acc:HGNC:6563]	6628	-5.963552951812744	-0.41926455	Yes	
+row_20	TRIB3	tribbles pseudokinase 3 [Source:HGNC Symbol;Acc:HGNC:16228]	6893	-6.69210958480835	-0.43190327	Yes	
+row_21	PNRC1	proline rich nuclear receptor coactivator 1 [Source:HGNC Symbol;Acc:HGNC:17278]	6913	-6.758522987365723	-0.41544628	Yes	
+row_22	SEMA3B	semaphorin 3B [Source:HGNC Symbol;Acc:HGNC:10724]	7041	-7.186951160430908	-0.4105488	Yes	
+row_23	PLAUR	"plasminogen activator, urokinase receptor [Source:HGNC Symbol;Acc:HGNC:9053]"	7379	-8.620363235473633	-0.42646712	Yes	
+row_24	STX5	syntaxin 5 [Source:HGNC Symbol;Acc:HGNC:11440]	7386	-8.667832374572754	-0.40319344	Yes	
+row_25	LGMN	legumain [Source:HGNC Symbol;Acc:HGNC:9472]	7393	-8.714075088500977	-0.37979183	Yes	
+row_26	HSD17B7	hydroxysteroid 17-beta dehydrogenase 7 [Source:HGNC Symbol;Acc:HGNC:5215]	7468	-9.112004280090332	-0.36331376	Yes	
+row_27	SREBF2	sterol regulatory element binding transcription factor 2 [Source:HGNC Symbol;Acc:HGNC:11290]	7580	-9.668460845947266	-0.34966245	Yes	
+row_28	STARD4	StAR related lipid transfer domain containing 4 [Source:HGNC Symbol;Acc:HGNC:18058]	7697	-10.315520286560059	-0.3348109	Yes	
+row_29	ERRFI1	ERBB receptor feedback inhibitor 1 [Source:HGNC Symbol;Acc:HGNC:18185]	7981	-13.010330200195312	-0.33221084	Yes	
+row_30	FADS2	fatty acid desaturase 2 [Source:HGNC Symbol;Acc:HGNC:3575]	8044	-13.884552001953125	-0.30111226	Yes	
+row_31	SCD	stearoyl-CoA desaturase [Source:HGNC Symbol;Acc:HGNC:10571]	8336	-20.49287986755371	-0.2787539	Yes	
+row_32	ALDOC	"aldolase, fructose-bisphosphate C [Source:HGNC Symbol;Acc:HGNC:418]"	8479	-33.30801773071289	-0.20335609	Yes	
+row_33	LDLR	low density lipoprotein receptor [Source:HGNC Symbol;Acc:HGNC:6547]	8480	-33.658592224121094	-0.11023117	Yes	
+row_34	ANTXR2	ANTXR cell adhesion molecule 2 [Source:HGNC Symbol;Acc:HGNC:21732]	8501	-40.993011474609375	8.260968E-4	Yes	

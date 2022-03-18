@@ -4,7 +4,10 @@ navbar:
   title: "RNAseq-BRAF"
   left:
     
+    
+    - text: "Oncoprint"
+      href: oncoprint.html
     - text: "Clustering analysis"
       href: de_analysis.html
     - text: "Differential expression"
-      href: index.html
+      href: differential_expression_BRAF.html
