@@ -1,0 +1,10 @@
+---
+title: "Oncoprint"
+output: html_document
+---
+
+
+
+```{r pressure, echo=FALSE, out.width = '100%'}
+knitr::include_graphics("/Users/aliciapliego/Projects/FMI_RNAseq/BRAF/report/RNA-BRAF/images/oncoprint_BRAF_sabrina-1.png")
+```

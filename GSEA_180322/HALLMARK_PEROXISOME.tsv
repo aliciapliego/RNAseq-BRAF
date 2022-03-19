@@ -1,0 +1,57 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	EHHADH	enoyl-CoA hydratase and 3-hydroxyacyl CoA dehydrogenase [Source:HGNC Symbol;Acc:HGNC:3247]	637	11.723174095153809	-0.046492342	No	
+row_1	CEL	carboxyl ester lipase [Source:HGNC Symbol;Acc:HGNC:1848]	798	10.568785667419434	-0.039397422	No	
+row_2	ACAA1	acetyl-CoA acyltransferase 1 [Source:HGNC Symbol;Acc:HGNC:82]	923	9.808446884155273	-0.029915813	No	
+row_3	SMARCC1	"SWI/SNF related, matrix associated, actin dependent regulator of chromatin subfamily c member 1 [Source:HGNC Symbol;Acc:HGNC:11104]"	1071	9.00456428527832	-0.0251345	No	
+row_4	ISOC1	isochorismatase domain containing 1 [Source:HGNC Symbol;Acc:HGNC:24254]	1160	8.601969718933105	-0.014364708	No	
+row_5	NUDT19	nudix hydrolase 19 [Source:HGNC Symbol;Acc:HGNC:32036]	1200	8.41147518157959	0.0017327943	No	
+row_6	ALDH1A1	aldehyde dehydrogenase 1 family member A1 [Source:HGNC Symbol;Acc:HGNC:402]	1251	8.206352233886719	0.016023915	No	
+row_7	CRAT	carnitine O-acetyltransferase [Source:HGNC Symbol;Acc:HGNC:2342]	1299	8.025470733642578	0.030224564	No	
+row_8	ECI2	enoyl-CoA delta isomerase 2 [Source:HGNC Symbol;Acc:HGNC:14601]	1304	8.012555122375488	0.049480364	No	
+row_9	YWHAH	tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein eta [Source:HGNC Symbol;Acc:HGNC:12853]	1675	6.820796489715576	0.022503505	No	
+row_10	IDH1	isocitrate dehydrogenase (NADP(+)) 1 [Source:HGNC Symbol;Acc:HGNC:5382]	1715	6.6811604499816895	0.03434052	No	
+row_11	ERCC3	"ERCC excision repair 3, TFIIH core complex helicase subunit [Source:HGNC Symbol;Acc:HGNC:3435]"	1858	6.286923408508301	0.033021796	No	
+row_12	SLC25A19	solute carrier family 25 member 19 [Source:HGNC Symbol;Acc:HGNC:14409]	2026	5.904139041900635	0.02780303	No	
+row_13	PRDX1	peroxiredoxin 1 [Source:HGNC Symbol;Acc:HGNC:9352]	2114	5.700888156890869	0.0315479	No	
+row_14	HRAS	"HRas proto-oncogene, GTPase [Source:HGNC Symbol;Acc:HGNC:5173]"	2408	5.11203145980835	0.009472809	No	
+row_15	CTPS1	CTP synthase 1 [Source:HGNC Symbol;Acc:HGNC:2519]	2461	5.004471302032471	0.01564346	No	
+row_16	SOD1	superoxide dismutase 1 [Source:HGNC Symbol;Acc:HGNC:11179]	2473	4.9780988693237305	0.026599528	No	
+row_17	ALDH9A1	aldehyde dehydrogenase 9 family member A1 [Source:HGNC Symbol;Acc:HGNC:412]	2505	4.921307563781738	0.035049736	No	
+row_18	SLC25A17	solute carrier family 25 member 17 [Source:HGNC Symbol;Acc:HGNC:10987]	2594	4.735159397125244	0.036298428	No	
+row_19	CTBP1	C-terminal binding protein 1 [Source:HGNC Symbol;Acc:HGNC:2494]	2695	4.554986000061035	0.035683874	No	
+row_20	SLC25A4	solute carrier family 25 member 4 [Source:HGNC Symbol;Acc:HGNC:10990]	2822	4.34859561920166	0.031485304	No	
+row_21	SOD2	superoxide dismutase 2 [Source:HGNC Symbol;Acc:HGNC:11180]	3290	3.635467767715454	-0.014809883	No	
+row_22	SERPINA6	serpin family A member 6 [Source:HGNC Symbol;Acc:HGNC:1540]	3424	3.4655754566192627	-0.02201079	No	
+row_23	ESR2	estrogen receptor 2 [Source:HGNC Symbol;Acc:HGNC:3468]	3601	3.2440969944000244	-0.034843985	No	
+row_24	GNPAT	glyceronephosphate O-acyltransferase [Source:HGNC Symbol;Acc:HGNC:4416]	3653	3.1784563064575195	-0.033051156	No	
+row_25	MSH2	mutS homolog 2 [Source:HGNC Symbol;Acc:HGNC:7325]	3713	3.0974268913269043	-0.03240425	No	
+row_26	ABCC8	ATP binding cassette subfamily C member 8 [Source:HGNC Symbol;Acc:HGNC:59]	3906	2.847783327102661	-0.048106097	No	
+row_27	CLN6	CLN6 transmembrane ER protein [Source:HGNC Symbol;Acc:HGNC:2077]	4225	2.486056327819824	-0.07960456	No	
+row_28	ABCD3	ATP binding cassette subfamily D member 3 [Source:HGNC Symbol;Acc:HGNC:67]	4295	2.410752773284912	-0.08183143	No	
+row_29	FADS1	fatty acid desaturase 1 [Source:HGNC Symbol;Acc:HGNC:3574]	4543	-2.483652353286743	-0.10493643	No	
+row_30	SEMA3C	semaphorin 3C [Source:HGNC Symbol;Acc:HGNC:10725]	4799	-2.7687060832977295	-0.12828596	No	
+row_31	PABPC1	poly(A) binding protein cytoplasmic 1 [Source:HGNC Symbol;Acc:HGNC:8554]	5273	-3.3810367584228516	-0.17591742	No	
+row_32	GSTK1	glutathione S-transferase kappa 1 [Source:HGNC Symbol;Acc:HGNC:16906]	5283	-3.395859479904175	-0.16862065	No	
+row_33	ABCD1	ATP binding cassette subfamily D member 1 [Source:HGNC Symbol;Acc:HGNC:61]	5434	-3.6365561485290527	-0.17741168	No	
+row_34	HSD11B2	hydroxysteroid 11-beta dehydrogenase 2 [Source:HGNC Symbol;Acc:HGNC:5209]	5497	-3.7239389419555664	-0.17557703	No	
+row_35	STS	steroid sulfatase [Source:HGNC Symbol;Acc:HGNC:11425]	5622	-3.9072723388671875	-0.18062565	No	
+row_36	SULT2B1	sulfotransferase family 2B member 1 [Source:HGNC Symbol;Acc:HGNC:11459]	5749	-4.1072306632995605	-0.18541853	No	
+row_37	SIAH1	siah E3 ubiquitin protein ligase 1 [Source:HGNC Symbol;Acc:HGNC:10857]	5794	-4.183643817901611	-0.18032256	No	
+row_38	SLC23A2	solute carrier family 23 member 2 [Source:HGNC Symbol;Acc:HGNC:10973]	5810	-4.241806983947754	-0.17165264	No	
+row_39	FIS1	"fission, mitochondrial 1 [Source:HGNC Symbol;Acc:HGNC:21689]"	5859	-4.326026439666748	-0.1666793	No	
+row_40	RETSAT	retinol saturase [Source:HGNC Symbol;Acc:HGNC:25991]	5961	-4.4930338859558105	-0.16756469	No	
+row_41	HSD3B7	"hydroxy-delta-5-steroid dehydrogenase, 3 beta- and steroid delta-isomerase 7 [Source:HGNC Symbol;Acc:HGNC:18324]"	6400	-5.379185199737549	-0.20613565	No	
+row_42	ACSL4	acyl-CoA synthetase long chain family member 4 [Source:HGNC Symbol;Acc:HGNC:3571]	7055	-7.223540782928467	-0.2657184	No	
+row_43	ATXN1	ataxin 1 [Source:HGNC Symbol;Acc:HGNC:10548]	7184	-7.746187210083008	-0.2617878	No	
+row_44	MVP	major vault protein [Source:HGNC Symbol;Acc:HGNC:7531]	7494	-9.233739852905273	-0.275607	Yes	
+row_45	PEX6	peroxisomal biogenesis factor 6 [Source:HGNC Symbol;Acc:HGNC:8859]	7543	-9.482619285583496	-0.25793678	Yes	
+row_46	DLG4	discs large MAGUK scaffold protein 4 [Source:HGNC Symbol;Acc:HGNC:2903]	7573	-9.637678146362305	-0.23763701	Yes	
+row_47	CRABP2	cellular retinoic acid binding protein 2 [Source:HGNC Symbol;Acc:HGNC:2339]	7724	-10.554022789001465	-0.22939543	Yes	
+row_48	DHRS3	dehydrogenase/reductase 3 [Source:HGNC Symbol;Acc:HGNC:17693]	7739	-10.662081718444824	-0.20479883	Yes	
+row_49	TSPO	translocator protein [Source:HGNC Symbol;Acc:HGNC:1158]	7793	-11.065669059753418	-0.18382221	Yes	
+row_50	CADM1	cell adhesion molecule 1 [Source:HGNC Symbol;Acc:HGNC:5951]	7972	-12.907014846801758	-0.1730994	Yes	
+row_51	ACSL5	acyl-CoA synthetase long chain family member 5 [Source:HGNC Symbol;Acc:HGNC:16526]	8117	-14.80363941192627	-0.15368433	Yes	
+row_52	LONP2	"lon peptidase 2, peroxisomal [Source:HGNC Symbol;Acc:HGNC:20598]"	8239	-17.456462860107422	-0.1250164	Yes	
+row_53	PEX11A	peroxisomal biogenesis factor 11 alpha [Source:HGNC Symbol;Acc:HGNC:8852]	8252	-17.72315788269043	-0.08279698	Yes	
+row_54	CRABP1	cellular retinoic acid binding protein 1 [Source:HGNC Symbol;Acc:HGNC:2338]	8327	-20.313526153564453	-0.04153407	Yes	
+row_55	ERCC1	"ERCC excision repair 1, endonuclease non-catalytic subunit [Source:HGNC Symbol;Acc:HGNC:3433]"	8419	-25.5164794921875	0.010528757	Yes	

@@ -1,0 +1,16 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	DLL1	delta like canonical Notch ligand 1 [Source:HGNC Symbol;Acc:HGNC:2908]	14	40.6618766784668	0.22011536	Yes	
+row_1	NOTCH1	notch receptor 1 [Source:HGNC Symbol;Acc:HGNC:7881]	330	15.184926986694336	0.2658466	Yes	
+row_2	HES1	hes family bHLH transcription factor 1 [Source:HGNC Symbol;Acc:HGNC:5192]	372	14.583763122558594	0.34055725	Yes	
+row_3	WNT5A	Wnt family member 5A [Source:HGNC Symbol;Acc:HGNC:12784]	589	12.116868019104004	0.38121104	Yes	
+row_4	LFNG	LFNG O-fucosylpeptide 3-beta-N-acetylglucosaminyltransferase [Source:HGNC Symbol;Acc:HGNC:6560]	1503	7.336879730224609	0.31373763	No	
+row_5	CUL1	cullin 1 [Source:HGNC Symbol;Acc:HGNC:2551]	1549	7.169281005859375	0.34753993	No	
+row_6	FZD5	frizzled class receptor 5 [Source:HGNC Symbol;Acc:HGNC:4043]	1913	6.171351909637451	0.33846146	No	
+row_7	FZD1	frizzled class receptor 1 [Source:HGNC Symbol;Acc:HGNC:4038]	2136	5.650038719177246	0.3431398	No	
+row_8	SAP30	Sin3A associated protein 30 [Source:HGNC Symbol;Acc:HGNC:10532]	3937	2.814929723739624	0.14657772	No	
+row_9	NOTCH2	notch receptor 2 [Source:HGNC Symbol;Acc:HGNC:7882]	5041	-3.074620008468628	0.03348985	No	
+row_10	NOTCH3	notch receptor 3 [Source:HGNC Symbol;Acc:HGNC:7883]	7059	-7.231522083282471	-0.16453227	No	
+row_11	ARRB1	arrestin beta 1 [Source:HGNC Symbol;Acc:HGNC:711]	7499	-9.258076667785645	-0.16572371	No	
+row_12	TCF7L2	transcription factor 7 like 2 [Source:HGNC Symbol;Acc:HGNC:11641]	7804	-11.13915729522705	-0.14076243	No	
+row_13	MAML2	mastermind like transcriptional coactivator 2 [Source:HGNC Symbol;Acc:HGNC:16259]	8187	-16.259071350097656	-0.0970609	No	
+row_14	PRKCA	protein kinase C alpha [Source:HGNC Symbol;Acc:HGNC:9393]	8406	-24.70450782775879	0.0120084835	No	

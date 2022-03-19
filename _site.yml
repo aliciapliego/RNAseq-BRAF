@@ -1,0 +1,13 @@
+name: "personal-website"
+output_dir: "."
+navbar:
+  title: "RNAseq-BRAF"
+  left:
+    
+    
+    - text: "Oncoprint"
+      href: oncoprint.html
+    - text: "Clustering analysis"
+      href: de_analysis.html
+    - text: "Differential expression"
+      href: differential_expression_BRAF.html

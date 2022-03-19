@@ -1,0 +1,19 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	RTN1	reticulon 1 [Source:HGNC Symbol;Acc:HGNC:10467]	423	13.81350326538086	0.028656876	No	
+row_1	CDK5R1	cyclin dependent kinase 5 regulatory subunit 1 [Source:HGNC Symbol;Acc:HGNC:1775]	842	10.28411865234375	0.037852224	No	
+row_2	NKX6-1	NK6 homeobox 1 [Source:HGNC Symbol;Acc:HGNC:7839]	914	9.81940746307373	0.08527435	No	
+row_3	TLE1	"TLE family member 1, transcriptional corepressor [Source:HGNC Symbol;Acc:HGNC:11837]"	1532	7.219051837921143	0.053620517	No	
+row_4	ETS2	"ETS proto-oncogene 2, transcription factor [Source:HGNC Symbol;Acc:HGNC:3489]"	1743	6.597076416015625	0.06636635	No	
+row_5	SCG2	secretogranin II [Source:HGNC Symbol;Acc:HGNC:10575]	2248	5.420351028442383	0.037802327	No	
+row_6	AMOT	angiomotin [Source:HGNC Symbol;Acc:HGNC:17810]	2637	4.661262512207031	0.018587457	No	
+row_7	ACHE	acetylcholinesterase (Cartwright blood group) [Source:HGNC Symbol;Acc:HGNC:108]	4126	2.6032259464263916	-0.14186803	No	
+row_8	RASA1	RAS p21 protein activator 1 [Source:HGNC Symbol;Acc:HGNC:9871]	5057	-3.100208282470703	-0.23378351	No	
+row_9	TLE3	"TLE family member 3, transcriptional corepressor [Source:HGNC Symbol;Acc:HGNC:11839]"	5197	-3.269686460494995	-0.23157874	No	
+row_10	OPHN1	oligophrenin 1 [Source:HGNC Symbol;Acc:HGNC:8148]	6072	-4.6982831954956055	-0.30782038	No	
+row_11	NF1	neurofibromin 1 [Source:HGNC Symbol;Acc:HGNC:7765]	7116	-7.440352916717529	-0.38838777	Yes	
+row_12	NRP2	neuropilin 2 [Source:HGNC Symbol;Acc:HGNC:8005]	7266	-8.11527156829834	-0.359833	Yes	
+row_13	CELSR1	cadherin EGF LAG seven-pass G-type receptor 1 [Source:HGNC Symbol;Acc:HGNC:1850]	7302	-8.270142555236816	-0.31697243	Yes	
+row_14	PML	PML nuclear body scaffold [Source:HGNC Symbol;Acc:HGNC:9113]	8101	-14.590508460998535	-0.3280658	Yes	
+row_15	VLDLR	very low density lipoprotein receptor [Source:HGNC Symbol;Acc:HGNC:12698]	8287	-18.86517906188965	-0.24268077	Yes	
+row_16	NRP1	neuropilin 1 [Source:HGNC Symbol;Acc:HGNC:8004]	8321	-20.024599075317383	-0.13280776	Yes	
+row_17	DPYSL2	dihydropyrimidinase like 2 [Source:HGNC Symbol;Acc:HGNC:3014]	8432	-27.233516693115234	0.008950592	Yes	

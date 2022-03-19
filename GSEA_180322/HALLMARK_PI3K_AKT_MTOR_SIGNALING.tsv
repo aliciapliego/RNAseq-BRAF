@@ -1,0 +1,46 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	VAV3	vav guanine nucleotide exchange factor 3 [Source:HGNC Symbol;Acc:HGNC:12659]	201	18.228933334350586	0.031578302	Yes	
+row_1	CAB39	calcium binding protein 39 [Source:HGNC Symbol;Acc:HGNC:20292]	206	18.08466148376465	0.08599378	Yes	
+row_2	SQSTM1	sequestosome 1 [Source:HGNC Symbol;Acc:HGNC:11280]	264	16.706607818603516	0.12996496	Yes	
+row_3	MAPKAP1	MAPK associated protein 1 [Source:HGNC Symbol;Acc:HGNC:18752]	381	14.422510147094727	0.16003308	Yes	
+row_4	RAF1	"Raf-1 proto-oncogene, serine/threonine kinase [Source:HGNC Symbol;Acc:HGNC:9829]"	439	13.61773681640625	0.19462934	Yes	
+row_5	PLCG1	phospholipase C gamma 1 [Source:HGNC Symbol;Acc:HGNC:9065]	448	13.494531631469727	0.2346409	Yes	
+row_6	PFN1	profilin 1 [Source:HGNC Symbol;Acc:HGNC:8881]	881	9.992931365966797	0.21393037	Yes	
+row_7	TRAF2	TNF receptor associated factor 2 [Source:HGNC Symbol;Acc:HGNC:12032]	1052	9.09102725982666	0.22143713	Yes	
+row_8	MAP3K7	mitogen-activated protein kinase kinase kinase 7 [Source:HGNC Symbol;Acc:HGNC:6859]	1104	8.85140323638916	0.24227616	Yes	
+row_9	CDK4	cyclin dependent kinase 4 [Source:HGNC Symbol;Acc:HGNC:1773]	1128	8.731148719787598	0.26605836	Yes	
+row_10	CSNK2B	casein kinase 2 beta [Source:HGNC Symbol;Acc:HGNC:2460]	1131	8.727946281433105	0.2923119	Yes	
+row_11	EIF4E	eukaryotic translation initiation factor 4E [Source:HGNC Symbol;Acc:HGNC:3287]	1274	8.115900039672852	0.30016723	Yes	
+row_12	PRKAR2A	protein kinase cAMP-dependent type II regulatory subunit alpha [Source:HGNC Symbol;Acc:HGNC:9391]	1278	8.098733901977539	0.32439294	Yes	
+row_13	AKT1S1	AKT1 substrate 1 [Source:HGNC Symbol;Acc:HGNC:28426]	2056	5.848062992095947	0.25034162	No	
+row_14	HRAS	"HRas proto-oncogene, GTPase [Source:HGNC Symbol;Acc:HGNC:5173]"	2408	5.11203145980835	0.22438718	No	
+row_15	DUSP3	dual specificity phosphatase 3 [Source:HGNC Symbol;Acc:HGNC:3069]	2492	4.9527387619018555	0.22961281	No	
+row_16	ARHGDIA	Rho GDP dissociation inhibitor alpha [Source:HGNC Symbol;Acc:HGNC:678]	2620	4.689126968383789	0.22883989	No	
+row_17	PIN1	"peptidylprolyl cis/trans isomerase, NIMA-interacting 1 [Source:HGNC Symbol;Acc:HGNC:8988]"	2739	4.491934776306152	0.22853178	No	
+row_18	CAB39L	calcium binding protein 39 like [Source:HGNC Symbol;Acc:HGNC:20290]	2896	4.212932586669922	0.22288729	No	
+row_19	NFKBIB	NFKB inhibitor beta [Source:HGNC Symbol;Acc:HGNC:7798]	2914	4.1937031745910645	0.23360693	No	
+row_20	PPP2R1B	protein phosphatase 2 scaffold subunit Abeta [Source:HGNC Symbol;Acc:HGNC:9303]	2945	4.140687465667725	0.24262975	No	
+row_21	IL2RG	interleukin 2 receptor subunit gamma [Source:HGNC Symbol;Acc:HGNC:6010]	3098	3.905367374420166	0.23652437	No	
+row_22	RPTOR	regulatory associated protein of MTOR complex 1 [Source:HGNC Symbol;Acc:HGNC:30287]	3129	3.858189582824707	0.24468979	No	
+row_23	ACTR3	actin related protein 3 [Source:HGNC Symbol;Acc:HGNC:170]	3136	3.844944477081299	0.25565055	No	
+row_24	THEM4	thioesterase superfamily member 4 [Source:HGNC Symbol;Acc:HGNC:17947]	3241	3.6892478466033936	0.25456032	No	
+row_25	PTPN11	protein tyrosine phosphatase non-receptor type 11 [Source:HGNC Symbol;Acc:HGNC:9644]	3340	3.5633699893951416	0.2537969	No	
+row_26	AKT1	AKT serine/threonine kinase 1 [Source:HGNC Symbol;Acc:HGNC:391]	3520	3.3487608432769775	0.24281222	No	
+row_27	CFL1	cofilin 1 [Source:HGNC Symbol;Acc:HGNC:1874]	3621	3.2240869998931885	0.24078277	No	
+row_28	UBE2N	ubiquitin conjugating enzyme E2 N [Source:HGNC Symbol;Acc:HGNC:12492]	3761	3.0302000045776367	0.23355712	No	
+row_29	CDK2	cyclin dependent kinase 2 [Source:HGNC Symbol;Acc:HGNC:1771]	3950	2.80586838722229	0.21986139	No	
+row_30	MKNK1	MAPK interacting serine/threonine kinase 1 [Source:HGNC Symbol;Acc:HGNC:7110]	4209	2.5009849071502686	0.19696999	No	
+row_31	TBK1	TANK binding kinase 1 [Source:HGNC Symbol;Acc:HGNC:11584]	4370	2.3392481803894043	0.18516617	No	
+row_32	PRKAG1	protein kinase AMP-activated non-catalytic subunit gamma 1 [Source:HGNC Symbol;Acc:HGNC:9385]	4632	-2.5713117122650146	0.16213377	No	
+row_33	MAPK10	mitogen-activated protein kinase 10 [Source:HGNC Symbol;Acc:HGNC:6872]	5698	-4.022319316864014	0.048514716	No	
+row_34	HSP90B1	heat shock protein 90 beta family member 1 [Source:HGNC Symbol;Acc:HGNC:12028]	6311	-5.197279930114746	-0.008017457	No	
+row_35	TSC2	TSC complex subunit 2 [Source:HGNC Symbol;Acc:HGNC:12363]	6861	-6.59788703918457	-0.05285541	No	
+row_36	TRIB3	tribbles pseudokinase 3 [Source:HGNC Symbol;Acc:HGNC:16228]	6893	-6.69210958480835	-0.036207017	No	
+row_37	MKNK2	MAPK interacting serine/threonine kinase 2 [Source:HGNC Symbol;Acc:HGNC:7111]	6922	-6.780864715576172	-0.018934801	No	
+row_38	PTEN	phosphatase and tensin homolog [Source:HGNC Symbol;Acc:HGNC:9588]	6986	-7.007650375366211	-0.0051094373	No	
+row_39	SLC2A1	solute carrier family 2 member 1 [Source:HGNC Symbol;Acc:HGNC:11005]	7180	-7.732991695404053	-0.004441788	No	
+row_40	IRAK4	interleukin 1 receptor associated kinase 4 [Source:HGNC Symbol;Acc:HGNC:17967]	7427	-8.891556739807129	-0.0065196347	No	
+row_41	GSK3B	glycogen synthase kinase 3 beta [Source:HGNC Symbol;Acc:HGNC:4617]	7589	-9.706365585327148	0.003918046	No	
+row_42	TNFRSF1A	TNF receptor superfamily member 1A [Source:HGNC Symbol;Acc:HGNC:11916]	7803	-11.137959480285645	0.012557037	No	
+row_43	CDKN1B	cyclin dependent kinase inhibitor 1B [Source:HGNC Symbol;Acc:HGNC:1785]	7821	-11.338501930236816	0.044961587	No	
+row_44	STAT2	signal transducer and activator of transcription 2 [Source:HGNC Symbol;Acc:HGNC:11363]	7884	-11.89016342163086	0.07372382	No	

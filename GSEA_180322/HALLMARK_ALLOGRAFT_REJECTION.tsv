@@ -1,0 +1,62 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	GCNT1	glucosaminyl (N-acetyl) transferase 1 [Source:HGNC Symbol;Acc:HGNC:4203]	27	32.07085418701172	0.056900833	No	
+row_1	CCND2	cyclin D2 [Source:HGNC Symbol;Acc:HGNC:1583]	34	30.096559524536133	0.11258788	No	
+row_2	TLR2	toll like receptor 2 [Source:HGNC Symbol;Acc:HGNC:11848]	169	19.395376205444336	0.13307069	No	
+row_3	F2R	coagulation factor II thrombin receptor [Source:HGNC Symbol;Acc:HGNC:3537]	886	9.973736763000488	0.06700647	No	
+row_4	STAT1	signal transducer and activator of transcription 1 [Source:HGNC Symbol;Acc:HGNC:11362]	1007	9.396777153015137	0.07041033	No	
+row_5	TRAF2	TNF receptor associated factor 2 [Source:HGNC Symbol;Acc:HGNC:12032]	1052	9.09102725982666	0.082237475	No	
+row_6	MAP3K7	mitogen-activated protein kinase kinase kinase 7 [Source:HGNC Symbol;Acc:HGNC:6859]	1104	8.85140323638916	0.09278699	No	
+row_7	EIF5A	eukaryotic translation initiation factor 5A [Source:HGNC Symbol;Acc:HGNC:3300]	1462	7.487194061279297	0.06455855	No	
+row_8	EIF3J	eukaryotic translation initiation factor 3 subunit J [Source:HGNC Symbol;Acc:HGNC:3270]	1666	6.83910608291626	0.05334484	No	
+row_9	IFNGR1	interferon gamma receptor 1 [Source:HGNC Symbol;Acc:HGNC:5439]	1824	6.382045269012451	0.04671973	No	
+row_10	DYRK3	dual specificity tyrosine phosphorylation regulated kinase 3 [Source:HGNC Symbol;Acc:HGNC:3094]	1914	6.171288967132568	0.047748934	No	
+row_11	NME1	NME/NM23 nucleoside diphosphate kinase 1 [Source:HGNC Symbol;Acc:HGNC:7849]	2141	5.631252288818359	0.031549316	No	
+row_12	ABCE1	ATP binding cassette subfamily E member 1 [Source:HGNC Symbol;Acc:HGNC:69]	2654	4.624579906463623	-0.02039085	No	
+row_13	MRPL3	mitochondrial ribosomal protein L3 [Source:HGNC Symbol;Acc:HGNC:10379]	2672	4.5870361328125	-0.013807614	No	
+row_14	BRCA1	BRCA1 DNA repair associated [Source:HGNC Symbol;Acc:HGNC:1100]	3032	4.012984752655029	-0.048783038	No	
+row_15	C2	complement C2 [Source:HGNC Symbol;Acc:HGNC:1248]	3080	3.9342081546783447	-0.04697426	No	
+row_16	IL2RG	interleukin 2 receptor subunit gamma [Source:HGNC Symbol;Acc:HGNC:6010]	3098	3.905367374420166	-0.041668393	No	
+row_17	NOS2	nitric oxide synthase 2 [Source:HGNC Symbol;Acc:HGNC:7873]	3189	3.7659449577331543	-0.04526488	No	
+row_18	CCND3	cyclin D3 [Source:HGNC Symbol;Acc:HGNC:1585]	3326	3.5818369388580322	-0.054651443	No	
+row_19	RIPK2	receptor interacting serine/threonine kinase 2 [Source:HGNC Symbol;Acc:HGNC:10020]	3407	3.492493152618408	-0.057576634	No	
+row_20	AKT1	AKT serine/threonine kinase 1 [Source:HGNC Symbol;Acc:HGNC:391]	3520	3.3487608432769775	-0.06455904	No	
+row_21	GLMN	"glomulin, FKBP associated protein [Source:HGNC Symbol;Acc:HGNC:14373]"	3705	3.1037955284118652	-0.080523215	No	
+row_22	RARS1	arginyl-tRNA synthetase 1 [Source:HGNC Symbol;Acc:HGNC:9870]	3724	3.082655191421509	-0.07687738	No	
+row_23	UBE2N	ubiquitin conjugating enzyme E2 N [Source:HGNC Symbol;Acc:HGNC:12492]	3761	3.0302000045776367	-0.075460516	No	
+row_24	TPD52	tumor protein D52 [Source:HGNC Symbol;Acc:HGNC:12005]	3795	2.9913156032562256	-0.0737614	No	
+row_25	LYN	"LYN proto-oncogene, Src family tyrosine kinase [Source:HGNC Symbol;Acc:HGNC:6735]"	3886	2.8745880126953125	-0.07902819	No	
+row_26	ACHE	acetylcholinesterase (Cartwright blood group) [Source:HGNC Symbol;Acc:HGNC:108]	4126	2.6032259464263916	-0.10244078	No	
+row_27	IL12RB1	interleukin 12 receptor subunit beta 1 [Source:HGNC Symbol;Acc:HGNC:5971]	4403	-2.351468801498413	-0.13070488	No	
+row_28	LIF	LIF interleukin 6 family cytokine [Source:HGNC Symbol;Acc:HGNC:6596]	4581	-2.5225627422332764	-0.1469296	No	
+row_29	TLR3	toll like receptor 3 [Source:HGNC Symbol;Acc:HGNC:11849]	5002	-3.016209602355957	-0.1909935	No	
+row_30	ABI1	abl interactor 1 [Source:HGNC Symbol;Acc:HGNC:11320]	5307	-3.438898801803589	-0.22053428	No	
+row_31	AARS1	alanyl-tRNA synthetase 1 [Source:HGNC Symbol;Acc:HGNC:20]	5327	-3.4708621501922607	-0.21627936	No	
+row_32	IL27RA	interleukin 27 receptor subunit alpha [Source:HGNC Symbol;Acc:HGNC:17290]	5612	-3.8945062160491943	-0.24259897	No	
+row_33	HCLS1	hematopoietic cell-specific Lyn substrate 1 [Source:HGNC Symbol;Acc:HGNC:4844]	5730	-4.085058212280273	-0.2487935	No	
+row_34	ITGB2	integrin subunit beta 2 [Source:HGNC Symbol;Acc:HGNC:6155]	5743	-4.101524353027344	-0.2425282	No	
+row_35	IL15	interleukin 15 [Source:HGNC Symbol;Acc:HGNC:5977]	5995	-4.557437896728516	-0.2636993	No	
+row_36	TAPBP	TAP binding protein [Source:HGNC Symbol;Acc:HGNC:11566]	6191	-4.914483070373535	-0.27757254	No	
+row_37	LY75	lymphocyte antigen 75 [Source:HGNC Symbol;Acc:HGNC:6729]	6371	-5.310323715209961	-0.28881007	No	
+row_38	IL18	interleukin 18 [Source:HGNC Symbol;Acc:HGNC:5986]	6848	-6.553649425506592	-0.33287406	Yes	
+row_39	APBB1	amyloid beta precursor protein binding family B member 1 [Source:HGNC Symbol;Acc:HGNC:581]	6934	-6.810080051422119	-0.33017436	Yes	
+row_40	GPR65	G protein-coupled receptor 65 [Source:HGNC Symbol;Acc:HGNC:4517]	6989	-7.027916431427002	-0.32339692	Yes	
+row_41	CD47	CD47 molecule [Source:HGNC Symbol;Acc:HGNC:1682]	7077	-7.290529251098633	-0.32003367	Yes	
+row_42	PSMB10	proteasome 20S subunit beta 10 [Source:HGNC Symbol;Acc:HGNC:9538]	7146	-7.603265762329102	-0.31383532	Yes	
+row_43	EREG	epiregulin [Source:HGNC Symbol;Acc:HGNC:3443]	7182	-7.743548393249512	-0.30346784	Yes	
+row_44	TGFB1	transforming growth factor beta 1 [Source:HGNC Symbol;Acc:HGNC:11766]	7216	-7.890524864196777	-0.29258823	Yes	
+row_45	HLA-E	"major histocompatibility complex, class I, E [Source:HGNC Symbol;Acc:HGNC:4962]"	7278	-8.181218147277832	-0.28447828	Yes	
+row_46	IRF7	interferon regulatory factor 7 [Source:HGNC Symbol;Acc:HGNC:6122]	7415	-8.843460083007812	-0.2840052	Yes	
+row_47	CD40	CD40 molecule [Source:HGNC Symbol;Acc:HGNC:11919]	7571	-9.617941856384277	-0.2843299	Yes	
+row_48	IFNAR2	interferon alpha and beta receptor subunit 2 [Source:HGNC Symbol;Acc:HGNC:5433]	7634	-9.924729347229004	-0.27307117	Yes	
+row_49	B2M	beta-2-microglobulin [Source:HGNC Symbol;Acc:HGNC:914]	7721	-10.51386833190918	-0.2635494	Yes	
+row_50	HLA-DMA	"major histocompatibility complex, class II, DM alpha [Source:HGNC Symbol;Acc:HGNC:4934]"	7743	-10.674253463745117	-0.24603294	Yes	
+row_51	IFNGR2	interferon gamma receptor 2 [Source:HGNC Symbol;Acc:HGNC:5440]	7913	-12.173336029052734	-0.24322633	Yes	
+row_52	CAPG	"capping actin protein, gelsolin like [Source:HGNC Symbol;Acc:HGNC:1474]"	7978	-12.974270820617676	-0.2264899	Yes	
+row_53	IL4R	interleukin 4 receptor [Source:HGNC Symbol;Acc:HGNC:6015]	7985	-13.020812034606934	-0.20280072	Yes	
+row_54	PRKCG	protein kinase C gamma [Source:HGNC Symbol;Acc:HGNC:9402]	8083	-14.427245140075684	-0.18724783	Yes	
+row_55	TIMP1	TIMP metallopeptidase inhibitor 1 [Source:HGNC Symbol;Acc:HGNC:11820]	8229	-17.177583694458008	-0.17222297	Yes	
+row_56	HLA-A	"major histocompatibility complex, class I, A [Source:HGNC Symbol;Acc:HGNC:4931]"	8264	-18.035036087036133	-0.14245214	Yes	
+row_57	TGFB2	transforming growth factor beta 2 [Source:HGNC Symbol;Acc:HGNC:11768]	8341	-20.772010803222656	-0.112524144	Yes	
+row_58	HLA-G	"major histocompatibility complex, class I, G [Source:HGNC Symbol;Acc:HGNC:4964]"	8379	-22.699440002441406	-0.07436791	Yes	
+row_59	CDKN2A	cyclin dependent kinase inhibitor 2A [Source:HGNC Symbol;Acc:HGNC:1787]	8384	-22.863359451293945	-0.031998254	Yes	
+row_60	GBP2	guanylate binding protein 2 [Source:HGNC Symbol;Acc:HGNC:4183]	8411	-24.845783233642578	0.011482052	Yes	

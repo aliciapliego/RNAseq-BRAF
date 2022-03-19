@@ -1,0 +1,23 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	DLL1	delta like canonical Notch ligand 1 [Source:HGNC Symbol;Acc:HGNC:2908]	14	40.6618766784668	0.18620038	Yes	
+row_1	CCND2	cyclin D2 [Source:HGNC Symbol;Acc:HGNC:1583]	34	30.096559524536133	0.32300192	Yes	
+row_2	HDAC2	histone deacetylase 2 [Source:HGNC Symbol;Acc:HGNC:4853]	171	19.345407485961914	0.39634946	Yes	
+row_3	NOTCH1	notch receptor 1 [Source:HGNC Symbol;Acc:HGNC:7881]	330	15.184926986694336	0.44788414	Yes	
+row_4	TP53	tumor protein p53 [Source:HGNC Symbol;Acc:HGNC:11998]	358	14.770153045654297	0.5129381	Yes	
+row_5	LEF1	lymphoid enhancer binding factor 1 [Source:HGNC Symbol;Acc:HGNC:6551]	847	10.238791465759277	0.50273955	Yes	
+row_6	MYC	"MYC proto-oncogene, bHLH transcription factor [Source:HGNC Symbol;Acc:HGNC:7553]"	1349	7.848800182342529	0.47996804	Yes	
+row_7	SKP2	S-phase kinase associated protein 2 [Source:HGNC Symbol;Acc:HGNC:10901]	1427	7.595127582550049	0.50598335	Yes	
+row_8	CUL1	cullin 1 [Source:HGNC Symbol;Acc:HGNC:2551]	1549	7.169281005859375	0.524847	Yes	
+row_9	FZD1	frizzled class receptor 1 [Source:HGNC Symbol;Acc:HGNC:4038]	2136	5.650038719177246	0.48190224	No	
+row_10	NKD1	NKD inhibitor of WNT signaling pathway 1 [Source:HGNC Symbol;Acc:HGNC:17045]	2424	5.090309143066406	0.47160205	No	
+row_11	CTNNB1	catenin beta 1 [Source:HGNC Symbol;Acc:HGNC:2514]	3255	3.677701234817505	0.3907957	No	
+row_12	MAML1	mastermind like transcriptional coactivator 1 [Source:HGNC Symbol;Acc:HGNC:13632]	3666	3.1653995513916016	0.35711005	No	
+row_13	GNAI1	G protein subunit alpha i1 [Source:HGNC Symbol;Acc:HGNC:4384]	4051	2.6742029190063477	0.3242187	No	
+row_14	TCF7	transcription factor 7 [Source:HGNC Symbol;Acc:HGNC:11639]	4091	2.6414191722869873	0.33182627	No	
+row_15	AXIN1	axin 1 [Source:HGNC Symbol;Acc:HGNC:903]	4443	-2.3935446739196777	0.3015266	No	
+row_16	JAG2	jagged canonical Notch ligand 2 [Source:HGNC Symbol;Acc:HGNC:6189]	5066	-3.1118268966674805	0.24261408	No	
+row_17	NUMB	NUMB endocytic adaptor protein [Source:HGNC Symbol;Acc:HGNC:8060]	6420	-5.435849666595459	0.108306356	No	
+row_18	HDAC5	histone deacetylase 5 [Source:HGNC Symbol;Acc:HGNC:14068]	6640	-5.994194030761719	0.1101942	No	
+row_19	FRAT1	FRAT regulator of WNT signaling pathway 1 [Source:HGNC Symbol;Acc:HGNC:3944]	6867	-6.624970436096191	0.11417131	No	
+row_20	ADAM17	ADAM metallopeptidase domain 17 [Source:HGNC Symbol;Acc:HGNC:195]	7325	-8.378881454467773	0.09903306	No	
+row_21	HDAC11	histone deacetylase 11 [Source:HGNC Symbol;Acc:HGNC:19086]	7392	-8.710074424743652	0.13149531	No	
