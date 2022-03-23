@@ -17,7 +17,7 @@
 <script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -30,8 +30,11 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <script src="site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
 <script src="site_libs/plotly-binding-4.10.0/plotly.js"></script>
@@ -230,6 +233,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -237,6 +303,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -281,23 +357,23 @@ $(document).ready(function () {
 </div>
 
 
-<div id="rnaseq-braf-analysis" class="section level1">
-<h1>RNAseq BRAF analysis</h1>
-<div id="research-questions" class="section level2">
-<h2>Research questions</h2>
+<div id="rnaseq-braf-analysis" class="section level1" number="1">
+<h1 number="1"><span class="header-section-number">1</span> RNAseq BRAF analysis</h1>
+<div id="research-questions" class="section level2" number="1.1">
+<h2 number="1.1"><span class="header-section-number">1.1</span> Research questions</h2>
 <pre><code>1- Which genes are differently regulated genes in treated vs untreated in BRAF organoids?
 2- Are genes on the WNT signaling pathway upregulated in CTNNB1 mutated organoids?
 3- Are basal or classical state signatures visible explaining a drug resistance/sensitivity?</code></pre>
-<div id="htmlwidget-002b01181032247abf58" style="width:672px;height:480px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-002b01181032247abf58">{"x":{"visdat":{"da5857add69b":["function () ","plotlyVisDat"]},"cur_data":"da5857add69b","attrs":{"da5857add69b":{"header":{"values":["<b>Samples<\/b>","Sample","Treatment","Annotation"],"align":["left","center","center","center"],"line":{"width":1,"color":"black"},"fill":{"color":"rgb(235, 100, 230)"},"font":{"family":"Arial","size":14,"color":"white"}},"cells":{"values":[["1","2","3","4","5","6","7","8","9","10","11","12","13"],["LR2022_25","LR2022_26","LR2022_27","LR2022_28","LR2022_29","LR2022_30","LR2022_31","LR2022_32","LR2022_33","LR2022_34","LR2022_35","LR2022_36","LR2022_37"],["Untreated","Untreated","Untreated","Untreated","Untreated","Untreated","Untreated","Treated","Treated","Treated","Treated","Treated","Treated"],["Untr.6","Untr.5","Untr.4","Untr.3","Untr.2","Untr.1","New_untreated","Well.6","Well.5","Well.4","Well.3","Well.2","Well.1"]],"align":["left","center","center","center"],"line":{"color":"black","width":1},"fill":{"color":["rgb(235, 193, 238)","rgba(228, 222, 249, 0.65)"]},"font":{"family":"Arial","size":12,"color":"black"}},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"table"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"header":{"values":["<b>Samples<\/b>","Sample","Treatment","Annotation"],"align":["left","center","center","center"],"line":{"width":1,"color":"black"},"fill":{"color":"rgb(235, 100, 230)"},"font":{"family":"Arial","size":14,"color":"white"}},"cells":{"values":[["1","2","3","4","5","6","7","8","9","10","11","12","13"],["LR2022_25","LR2022_26","LR2022_27","LR2022_28","LR2022_29","LR2022_30","LR2022_31","LR2022_32","LR2022_33","LR2022_34","LR2022_35","LR2022_36","LR2022_37"],["Untreated","Untreated","Untreated","Untreated","Untreated","Untreated","Untreated","Treated","Treated","Treated","Treated","Treated","Treated"],["Untr.6","Untr.5","Untr.4","Untr.3","Untr.2","Untr.1","New_untreated","Well.6","Well.5","Well.4","Well.3","Well.2","Well.1"]],"align":["left","center","center","center"],"line":{"color":"black","width":1},"fill":{"color":["rgb(235, 193, 238)","rgba(228, 222, 249, 0.65)"]},"font":{"family":"Arial","size":12,"color":"black"}},"type":"table","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
-<div id="visualizing-library-sizes" class="section level3">
-<h3>Visualizing library sizes</h3>
+<div id="htmlwidget-8274b2783d610eb99635" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8274b2783d610eb99635">{"x":{"visdat":{"e9095da87f50":["function () ","plotlyVisDat"]},"cur_data":"e9095da87f50","attrs":{"e9095da87f50":{"header":{"values":["<b>Samples<\/b>","Sample","Treatment","Annotation"],"align":["left","center","center","center"],"line":{"width":1,"color":"black"},"fill":{"color":"rgb(235, 100, 230)"},"font":{"family":"Arial","size":14,"color":"white"}},"cells":{"values":[["1","2","3","4","5","6","7","8","9","10","11","12","13"],["LR2022_25","LR2022_26","LR2022_27","LR2022_28","LR2022_29","LR2022_30","LR2022_31","LR2022_32","LR2022_33","LR2022_34","LR2022_35","LR2022_36","LR2022_37"],["Untreated","Untreated","Untreated","Untreated","Untreated","Untreated","Untreated","Treated","Treated","Treated","Treated","Treated","Treated"],["Untr.6","Untr.5","Untr.4","Untr.3","Untr.2","Untr.1","New_untreated","Well.6","Well.5","Well.4","Well.3","Well.2","Well.1"]],"align":["left","center","center","center"],"line":{"color":"black","width":1},"fill":{"color":["rgb(235, 193, 238)","rgba(228, 222, 249, 0.65)"]},"font":{"family":"Arial","size":12,"color":"black"}},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"table"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"header":{"values":["<b>Samples<\/b>","Sample","Treatment","Annotation"],"align":["left","center","center","center"],"line":{"width":1,"color":"black"},"fill":{"color":"rgb(235, 100, 230)"},"font":{"family":"Arial","size":14,"color":"white"}},"cells":{"values":[["1","2","3","4","5","6","7","8","9","10","11","12","13"],["LR2022_25","LR2022_26","LR2022_27","LR2022_28","LR2022_29","LR2022_30","LR2022_31","LR2022_32","LR2022_33","LR2022_34","LR2022_35","LR2022_36","LR2022_37"],["Untreated","Untreated","Untreated","Untreated","Untreated","Untreated","Untreated","Treated","Treated","Treated","Treated","Treated","Treated"],["Untr.6","Untr.5","Untr.4","Untr.3","Untr.2","Untr.1","New_untreated","Well.6","Well.5","Well.4","Well.3","Well.2","Well.1"]],"align":["left","center","center","center"],"line":{"color":"black","width":1},"fill":{"color":["rgb(235, 193, 238)","rgba(228, 222, 249, 0.65)"]},"font":{"family":"Arial","size":12,"color":"black"}},"type":"table","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div id="visualizing-library-sizes" class="section level3" number="1.1.1">
+<h3 number="1.1.1"><span class="header-section-number">1.1.1</span> Visualizing library sizes</h3>
 <p>Sample 32 and sample 26 have low read number.</p>
-<div id="htmlwidget-9ca0d1a8dd886f655b55" style="width:672px;height:480px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-9ca0d1a8dd886f655b55">{"x":{"visdat":{"da58a6242d3":["function () ","plotlyVisDat"]},"cur_data":"da58a6242d3","attrs":{"da58a6242d3":{"x":["LR2022_25","LR2022_26","LR2022_27","LR2022_28","LR2022_29","LR2022_30","LR2022_31","LR2022_32","LR2022_33","LR2022_34","LR2022_35","LR2022_36","LR2022_37"],"y":[37471936,25078436,33516011,32073273,37203362,27610051,26222775,19368838,32745227,31050408,34097288,43868683,40385080],"name":"Barplot of library sizes","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"shapes":[{"type":"line","x0":0,"x1":1,"xref":"paper","y0":30000000,"y1":30000000,"line":{"color":"red"}},{"type":"rect","line":{"color":"black"},"x0":0.9,"x1":2}],"plot_bgcolor":"#e5ecf6","title":"Barplot of library sizes","xaxis":{"domain":[0,1],"automargin":true,"title":"Samples","type":"category","categoryorder":"array","categoryarray":["LR2022_25","LR2022_26","LR2022_27","LR2022_28","LR2022_29","LR2022_30","LR2022_31","LR2022_32","LR2022_33","LR2022_34","LR2022_35","LR2022_36","LR2022_37"]},"yaxis":{"domain":[0,1],"automargin":true,"title":"Million of reads"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":["LR2022_25","LR2022_26","LR2022_27","LR2022_28","LR2022_29","LR2022_30","LR2022_31","LR2022_32","LR2022_33","LR2022_34","LR2022_35","LR2022_36","LR2022_37"],"y":[37471936,25078436,33516011,32073273,37203362,27610051,26222775,19368838,32745227,31050408,34097288,43868683,40385080],"name":"Barplot of library sizes","type":"bar","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-91d11c87f3ad23646c4f" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-91d11c87f3ad23646c4f">{"x":{"visdat":{"e909122175fb":["function () ","plotlyVisDat"]},"cur_data":"e909122175fb","attrs":{"e909122175fb":{"x":["LR2022_25","LR2022_26","LR2022_27","LR2022_28","LR2022_29","LR2022_30","LR2022_31","LR2022_32","LR2022_33","LR2022_34","LR2022_35","LR2022_36","LR2022_37"],"y":[37471936,25078436,33516011,32073273,37203362,27610051,26222775,19368838,32745227,31050408,34097288,43868683,40385080],"name":"Barplot of library sizes","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"shapes":[{"type":"line","x0":0,"x1":1,"xref":"paper","y0":30000000,"y1":30000000,"line":{"color":"red"}},{"type":"rect","line":{"color":"black"},"x0":0.9,"x1":2}],"plot_bgcolor":"#e5ecf6","title":"Barplot of library sizes","xaxis":{"domain":[0,1],"automargin":true,"title":"Samples","type":"category","categoryorder":"array","categoryarray":["LR2022_25","LR2022_26","LR2022_27","LR2022_28","LR2022_29","LR2022_30","LR2022_31","LR2022_32","LR2022_33","LR2022_34","LR2022_35","LR2022_36","LR2022_37"]},"yaxis":{"domain":[0,1],"automargin":true,"title":"Million of reads"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":["LR2022_25","LR2022_26","LR2022_27","LR2022_28","LR2022_29","LR2022_30","LR2022_31","LR2022_32","LR2022_33","LR2022_34","LR2022_35","LR2022_36","LR2022_37"],"y":[37471936,25078436,33516011,32073273,37203362,27610051,26222775,19368838,32745227,31050408,34097288,43868683,40385080],"name":"Barplot of library sizes","type":"bar","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
-<div id="filtering-non-expressed-genes" class="section level3">
-<h3>Filtering non-expressed genes</h3>
+<div id="filtering-non-expressed-genes" class="section level3" number="1.1.2">
+<h3 number="1.1.2"><span class="header-section-number">1.1.2</span> Filtering non-expressed genes</h3>
 <ul>
 <li>Remove genes with a count lower than 5 Plot the number of samples a gene is expressed in: <img src="de_analysis_files/figure-html/unnamed-chunk-8-1.png" width="672" style="display: block; margin: auto;" /></li>
 </ul>
@@ -306,15 +382,15 @@ $(document).ready(function () {
 <li>Filter genes that are expressed in at least 2 samples.</li>
 </ul>
 </div>
-<div id="visualize-count-distributions" class="section level3">
-<h3>Visualize count distributions</h3>
+<div id="visualize-count-distributions" class="section level3" number="1.1.3">
+<h3 number="1.1.3"><span class="header-section-number">1.1.3</span> Visualize count distributions</h3>
 <p>Applying the boxplot function to the raw counts from our dataset reveals something about the nature of the data; the distributions are dominated by a few genes with very large counts. <img src="de_analysis_files/figure-html/unnamed-chunk-9-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p><img src="de_analysis_files/figure-html/unnamed-chunk-10-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>Log2 scale data with the vsd function from DEseq2 to remove the dependence of the variance on the mean, particurarly the high variance of the logarithm of count data when the mean is low.</p>
 <p><img src="de_analysis_files/figure-html/unnamed-chunk-12-1.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
-<div id="heatmap-of-the-sample-to-sample-distances" class="section level3">
-<h3>Heatmap of the sample-to-sample distances</h3>
+<div id="heatmap-of-the-sample-to-sample-distances" class="section level3" number="1.1.4">
+<h3 number="1.1.4"><span class="header-section-number">1.1.4</span> Heatmap of the sample-to-sample distances</h3>
 <p>I applied the dist function to the transpose of the transformed count matrix to get sample-to-sample distances.</p>
 <p><img src="de_analysis_files/figure-html/unnamed-chunk-14-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p><img src="de_analysis_files/figure-html/unnamed-chunk-15-1.png" width="672" style="display: block; margin: auto;" /></p>
@@ -325,7 +401,11 @@ $(document).ready(function () {
 </div>
 
 
+<p>Copyright &copy; 2022 Alicia Pliego. FTP lab. All rights reserved.</p>
 
+
+</div>
+</div>
 
 </div>
 
@@ -358,6 +438,35 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
