@@ -2,7 +2,8 @@
 title: "Differential expression analysis"
 author: "Alicia Pliego"
 date: "3/16/2022"
-output: html_document
+output: html_document 
+runtime: shiny
 ---
 
 ```{r setup, include=FALSE, echo=FALSE, message=FALSE}
@@ -19,6 +20,7 @@ library(ensembldb)
 library(tidyverse)
   library(EnhancedVolcano)
 library(ComplexHeatmap)
+library(DT)
 ```
 
 
@@ -124,6 +126,8 @@ res05_df <- as.data.frame(res05)
 res05_df$log10P <- -log10(res05_df$pvalue) 
 ```
 
+
+
 ```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width= 8, fig.height = 9, fig.align='center'}
 library(plotly)
 
@@ -212,8 +216,29 @@ plotCounts(dds, gene="DLL1", intgroup="Treatment")
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 # Further filter DE genes based on Padj = 0.01,  and FC>1.5(L2FC = 0.58)
 res_filtered_pval <- subset(res05, padj <0.01)
-res_filtered_all <- subset(res_filtered_pval, log2FoldChange >0.58)
+res_filtered_all_up <- subset(res_filtered_pval, log2FoldChange >0.58)
+res_filtered_all_up_df <- as.data.frame(res_filtered_all_up)
+
+res_filtered_all_down <- subset(res_filtered_pval, log2FoldChange < -0.58)
+res_filtered_all_down_df <- as.data.frame(res_filtered_all_down)
 ```
+
+### Table of downregulated genes in Treated samples
+
+```{r, echo=FALSE}
+library(shiny)
+library(DT)
+```
+
+```{r, echo=FALSE}
+DT::datatable(res_filtered_all_down_df)
+```
+
+### Table of upregulated genes in Treated samples
+```{r, echo=FALSE}
+DT::datatable(res_filtered_all_up_df)
+```
+
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 # Rank genes and export for GSEA analysis
@@ -299,7 +324,7 @@ heat <- t(scale(t(vst_sig)))
 Heatmap(heat, 
       row_names_gp = gpar(fontsize = 8),
     top_annotation = HeatmapAnnotation(foo = anno_block(gp = gpar(fill = 2:4),
-        labels = c("Treated", "Unreated"), 
+        labels = c("Treated", "Untreated"), 
         labels_gp = gpar(col = "white", fontsize = 10))),
     column_km = 2)
 ```
@@ -309,7 +334,7 @@ Heatmap(heat,
 Gene Set Enrichment analysis of Differential expressed genes filtered by pval <0.01
 Enriched pathways with a pval <0.05:
 ```{r pressure, echo=FALSE, out.width = '100%'}
-knitr::include_graphics("/Users/aliciapliego/Projects/FMI_RNAseq/BRAF/report/RNA-BRAF/images/GSEA_plot.png")
+knitr::include_graphics("/Users/aliciapliego/Projects/FMI_RNAseq/BRAF/report/RNAseq-BRAF/images/GSEA_plot.png")
 ```
 
 Link to enrichment results:

@@ -3,7 +3,6 @@ title: "RNAseq BRAF"
 author: "Alicia Pliego"
 date: "3/11/2022"
 output: html_document
-runtime: shiny
 ---
 
 # RNAseq BRAF analysis
