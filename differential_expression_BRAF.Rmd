@@ -10,7 +10,7 @@ output:
     toc_depth: 3
     number_sections: true
     theme: sandstone
-runtime: shiny
+
 ---
 
 ```{r setup, include=FALSE, echo=FALSE, message=FALSE}
@@ -88,14 +88,12 @@ keep <- rowSums(assay(dds) >= 10) >= 2
 dds <- dds[keep,]
 ```
 
-```{r, echo=FALSE, warning=FALSE, message=FALSE}
+```{r results , echo=FALSE, warning=FALSE, message=FALSE}
 dds <- DESeq(dds)
 res <- results(dds, contrast = c("Treatment", "Treated", "Untreated"))
 ```
 
-```{r, echo=FALSE, warning=FALSE, message=FALSE}
-resLFC <- lfcShrink(dds, coef= "Treatment_Untreated_vs_Treated", type="apeglm")
-```
+
 ## Comparison treated vs untreated groups 
 Summary of differentially expressed genes:
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
@@ -134,7 +132,9 @@ EnhancedVolcano(res05,
     x = 'log2FoldChange',
     y = 'pvalue',
     selectLab = c('DLL1','CCND2','NOTCH1',
-      'TP53','LEF1','SKP2','MYC','CUL1', 'HDAC2', 'PYGO1','AMER1', 'TCF7'),
+      'TP53','LEF1','SKP2','MYC','CUL1', 'HDAC2', 'PYGO1','AMER1', 'TCF7', 'DKK3', 'GSK3B',
+      drawConnectors = TRUE,
+    widthConnectors = 0.75,
     xlab = bquote(~Log[2]~ 'fold change'),
     pCutoff = 10e-14,
     FCcutoff = 2.0,
@@ -149,7 +149,7 @@ EnhancedVolcano(res05,
     legendIconSize = 4.0,
     drawConnectors = TRUE,
     widthConnectors = 1.0,
-    colConnectors = 'black')
+    colConnectors = 'black'))
 ```
 
 
@@ -244,6 +244,19 @@ plotCounts(dds, gene="TP53", intgroup="Treatment")
 plotCounts(dds, gene="ALDOB", intgroup="Treatment")
 plotCounts(dds, gene="CDH12", intgroup="Treatment")
 plotCounts(dds, gene="DLL1", intgroup="Treatment")
+```
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width= 8, fig.height = 5, fig.align='center'}
+# Save plotcounts to a data frame object
+
+par(mfrow=c(2,3))
+
+plotCounts(dds, gene="LEF1", intgroup="Treatment")
+plotCounts(dds, gene="PYGO1", intgroup="Treatment")
+plotCounts(dds, gene="PYGO2", intgroup="Treatment")
+plotCounts(dds, gene="CUL1", intgroup="Treatment")
+plotCounts(dds, gene="TCF7", intgroup="Treatment")
+plotCounts(dds, gene="DKK3", intgroup="Treatment")
 ```
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
@@ -381,10 +394,10 @@ Read more [here](GSEA_180322/index.html)
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 # we want the log2 fold change 
-original_gene_list = res2$log2FoldChange
+original_gene_list = res$log2FoldChange
 #original_gene_list<- as.data.frame(original_gene_list)
 # name the vector
-names(original_gene_list) <- rownames(res2)
+names(original_gene_list) <- rownames(res)
 
 # omit any NA values 
 gene_list<-na.omit(original_gene_list)
