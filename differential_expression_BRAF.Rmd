@@ -39,7 +39,7 @@ dirs <- list.files("/Users/aliciapliego/Projects/FMI_RNAseq/BRAF/data/data_v2/")
 ```
 
 ```{r,echo=FALSE, warning=FALSE, message=FALSE}
-quant_files <- list.files("/Users/aliciapliego/Projects/FMI_RNAseq/BRAF/data/data_v2/",pattern="quant.genes.sf",recursive = TRUE,full.names = TRUE)
+quant_files <- list.files("/Users/aliciapliego/Projects/FMI_RNAseq/BRAF/data/data_v4/",pattern="quant.genes.sf",recursive = TRUE,full.names = TRUE)
 ```
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
@@ -47,10 +47,10 @@ quant_files <- list.files("/Users/aliciapliego/Projects/FMI_RNAseq/BRAF/data/dat
 txi <- tximport(quant_files,type="salmon", txOut=TRUE)
 ```
 ### Samples to compare in the Differential Analysis
-Excluding sample 31 from the analysis, a Differential expression analysis was performed:
+Excluding sample 31, 35 and 37 from the analysis, a Differential expression analysis was performed:
 
 ```{r,  echo=FALSE, warning=FALSE, message=FALSE,fig.align='center'}
-metadata = read.table('/Users/aliciapliego/Projects/FMI_RNAseq/BRAF/data/BRAF_samples_v2.txt', header = TRUE)
+metadata = read.table('/Users/aliciapliego/Projects/FMI_RNAseq/BRAF/data/BRAF_samples_v4.txt', header = TRUE)
 fig <- plot_ly(
   type = 'table',
   header = list(
@@ -102,9 +102,9 @@ summary(res)
 ```
 
 Summary of differentially expressed genes.
-Adjusting cut-off for and FDR of 0.05:
+Adjusting cut-off for and FDR of 0.01:
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
-res05 <- results(dds, alpha=0.05, contrast = c("Treatment", "Treated", "Untreated"))
+res05 <- results(dds, alpha=0.01, contrast = c("Treatment", "Treated", "Untreated"))
 summary(res05)
 ```
 
@@ -118,14 +118,14 @@ Genes upregulated in the treated sample are in the right of the volcano plot, wh
 EnhancedVolcano(res05,
     lab = rownames(res05),
     title = 'Treated vs Untreated',
-    pCutoff = 10e-16,
-    FCcutoff = 1.5,
+    pCutoff = 10e-22,
+    FCcutoff = 2,
     x = 'log2FoldChange',
     y = 'pvalue')
 
 ```
 
-``````{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width= 8, fig.height = 9, fig.align='center'}
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width= 8, fig.height = 9, fig.align='center'}
 
   EnhancedVolcano(res05,
     lab = rownames(res05),
@@ -136,7 +136,7 @@ EnhancedVolcano(res05,
       drawConnectors = TRUE,
     widthConnectors = 0.75,
     xlab = bquote(~Log[2]~ 'fold change'),
-    pCutoff = 10e-14,
+    pCutoff = 10e-22,
     FCcutoff = 2.0,
     pointSize = 4.0,
     labSize = 6.0,
@@ -198,52 +198,79 @@ fig
 
 ### Counts of most differentially expressed gene
 
-Expression of MYC and GPRC5B is significantly higher in the Treated group.
 
-```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width= 5, fig.height = 5, fig.align='center'}
+
+```{r plotcounts wnt5a, echo=FALSE, warning=FALSE, message=FALSE, fig.width= 5, fig.height = 5, fig.align='center'}
 # Save plotcounts to a data frame object
-d <- plotCounts(dds, gene="GATA6", intgroup="Treatment", returnData=TRUE)
+d <- plotCounts(dds, gene="WNT5A", intgroup="Treatment", returnData=TRUE)
 
 # Plotting the CTNNB1 normalized counts, using the samplenames (rownames of d as labels)
 ggplot(d, aes(x = Treatment, y = count, color = Treatment)) + 
   geom_point(position=position_jitter(w = 0.1,h = 0)) +
   geom_text_repel(aes(label = rownames(d))) + 
   theme_bw() +
-  ggtitle("GATA6") +
+  ggtitle("WNT5A") +
   theme(plot.title = element_text(hjust = 0.5))
 ```
 
 
-```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width= 5, fig.height = 5, fig.align='center'}
+```{r plotcounts ctnnb1, echo=FALSE, warning=FALSE, message=FALSE, fig.width= 5, fig.height = 5, fig.align='center'}
 # Save plotcounts to a data frame object
 par(mfrow=c(2,3))
 
-d <- plotCounts(dds, gene="GPRC5B", intgroup="Treatment", returnData=TRUE)
+d <- plotCounts(dds, gene="CTNNB1", intgroup="Treatment", returnData=TRUE)
 
 # Plotting the CTNNB1 normalized counts, using the samplenames (rownames of d as labels)
 ggplot(d, aes(x = Treatment, y = count, color = Treatment)) + 
   geom_point(position=position_jitter(w = 0.1,h = 0)) +
   geom_text_repel(aes(label = rownames(d))) + 
   theme_bw() +
-  ggtitle("GPRC5B") +
+  ggtitle("CTNNB1") +
   theme(plot.title = element_text(hjust = 0.5))
 
 
 ```
 
 ### Counts of other Differenatially expressed genes
-Other genes of interest such as  B-Catenin (CTNNB1) abd TP53 are also upregulated in the treated group.
+There are genes related to the NOTCH signaling pathway through the DLL1 activation upregulated in the treated group, whilst the other routes of NOTCH throug JAG1 JAG2 are upregulated in the non treated samples.
 ```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width= 8, fig.height = 5, fig.align='center'}
 # Save plotcounts to a data frame object
 
 par(mfrow=c(2,3))
 
-plotCounts(dds, gene="CTNNB1", intgroup="Treatment")
-plotCounts(dds, gene="MYC", intgroup="Treatment")
+plotCounts(dds, gene="NOTCH1", intgroup="Treatment")
+plotCounts(dds, gene="RHOA", intgroup="Treatment")
+plotCounts(dds, gene="WNT3", intgroup="Treatment")
 plotCounts(dds, gene="TP53", intgroup="Treatment")
-plotCounts(dds, gene="ALDOB", intgroup="Treatment")
-plotCounts(dds, gene="CDH12", intgroup="Treatment")
+plotCounts(dds, gene="NOTCH2", intgroup="Treatment")
+plotCounts(dds, gene="SMAD4", intgroup="Treatment")
+```
+
+
+GATA6 upregulation could lead to the downregulation of FZD4 by recruiting EZH2 and inhibition or downregulation of WNT/ beta catening pathway.
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width= 8, fig.height = 5, fig.align='center'}
+# Save plotcounts to a data frame object
+
+par(mfrow=c(1,3))
+
+plotCounts(dds, gene="FZD4", intgroup="Treatment")
+plotCounts(dds, gene="GATA6", intgroup="Treatment")
+plotCounts(dds, gene="EZH2", intgroup="Treatment")
+```
+
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width= 8, fig.height = 5, fig.align='center'}
+# Save plotcounts to a data frame object
+
+par(mfrow=c(2,3))
+
+plotCounts(dds, gene="NOTCH1", intgroup="Treatment")
+plotCounts(dds, gene="NOTCH2", intgroup="Treatment")
+plotCounts(dds, gene="NBR2", intgroup="Treatment")
 plotCounts(dds, gene="DLL1", intgroup="Treatment")
+plotCounts(dds, gene="DLL4", intgroup="Treatment")
+plotCounts(dds, gene="NOTCH3", intgroup="Treatment")
 ```
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width= 8, fig.height = 5, fig.align='center'}
@@ -251,12 +278,37 @@ plotCounts(dds, gene="DLL1", intgroup="Treatment")
 
 par(mfrow=c(2,3))
 
-plotCounts(dds, gene="LEF1", intgroup="Treatment")
-plotCounts(dds, gene="PYGO1", intgroup="Treatment")
-plotCounts(dds, gene="PYGO2", intgroup="Treatment")
-plotCounts(dds, gene="CUL1", intgroup="Treatment")
-plotCounts(dds, gene="TCF7", intgroup="Treatment")
-plotCounts(dds, gene="DKK3", intgroup="Treatment")
+plotCounts(dds, gene="NOTCH4", intgroup="Treatment")
+plotCounts(dds, gene="JAG1", intgroup="Treatment")
+plotCounts(dds, gene="JAG2", intgroup="Treatment")
+plotCounts(dds, gene="DLL1", intgroup="Treatment")
+plotCounts(dds, gene="DLL4", intgroup="Treatment")
+plotCounts(dds, gene="NOTCH3", intgroup="Treatment")
+```
+
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width= 8, fig.height = 5, fig.align='center'}
+# Save plotcounts to a data frame object
+
+par(mfrow=c(2,3))
+
+plotCounts(dds, gene="MALAT1", intgroup="Treatment")
+plotCounts(dds, gene="APC", intgroup="Treatment")
+plotCounts(dds, gene="SMAD3", intgroup="Treatment")
+plotCounts(dds, gene="SMAD4", intgroup="Treatment")
+plotCounts(dds, gene="SMAD2", intgroup="Treatment")
+plotCounts(dds, gene="PTEN", intgroup="Treatment")
+```
+
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width= 8, fig.height = 5, fig.align='center'}
+# Save plotcounts to a data frame object
+
+par(mfrow=c(1,3))
+
+plotCounts(dds, gene="GSK3B", intgroup="Treatment")
+plotCounts(dds, gene="PIK3CA", intgroup="Treatment")
+plotCounts(dds, gene="PTEN", intgroup="Treatment")
 ```
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
@@ -288,14 +340,15 @@ DT::datatable(res_filtered_all_up_df)
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 # Rank genes and export for GSEA analysis
-x <- res_filtered_pval
+x <- res
 x$fcsign <- sign(x$log2FoldChange )
 x$logP=-log10(x$pvalue)
 x$metric= x$logP/x$fcsign
 x$Gene <- rownames(x)
 y<-x[,c("Gene", "metric")]
 filtered <- na.omit(y)
-write.table(filtered ,file="DE_genes.rnk",quote=F,sep="\t",row.names=F)
+filtered <- filtered[order((filtered$metric), decreasing = TRUE), ]
+write.table(filtered ,file="/Users/aliciapliego/Projects/FMI_RNAseq/BRAF/gsea/DE_genes_190522_AP_v2.rnk",quote=F,sep="\t",row.names=F)
 ```
 
 ## Heatmap of top 50 DE genes
@@ -321,18 +374,18 @@ normalized_counts <- counts(dds, normalized=T) %>%
 
 ## This will bring in a column of gene symbols
 top50_counts<- merge(normalized_counts, top50genes, by.x="gene", by.y="top50genes")
-names(top50_counts)[2] <- "LR2022_25"
-names(top50_counts)[3] <- "LR2022_26"
-names(top50_counts)[4] <- "LR2022_27"
-names(top50_counts)[5] <- "LR2022_28"
-names(top50_counts)[6] <- "LR2022_29"
-names(top50_counts)[7] <- "LR2022_30"
-names(top50_counts)[8] <- "LR2022_32"
-names(top50_counts)[9] <- "LR2022_33"
-names(top50_counts)[10] <- "LR2022_34"
-names(top50_counts)[11] <- "LR2022_35"
-names(top50_counts)[12] <- "LR2022_36"
-names(top50_counts)[13] <- "LR2022_37"
+
+names(top50_counts)[1] <- "LR2022_26"
+names(top50_counts)[2] <- "LR2022_27"
+names(top50_counts)[3] <- "LR2022_28"
+names(top50_counts)[4] <- "LR2022_29"
+names(top50_counts)[5] <- "LR2022_30"
+names(top50_counts)[6] <- "LR2022_32"
+names(top50_counts)[7] <- "LR2022_33"
+names(top50_counts)[8] <- "LR2022_34"
+names(top50_counts)[9] <- "LR2022_35"
+names(top50_counts)[10] <- "LR2022_36"
+
 top50_counts2 <- top50_counts[,-1]
 rownames(top50_counts2) <- top50_counts[,1]
 ```
@@ -346,18 +399,18 @@ vst_sig <- vst[rownames(vst) %in% rownames(top50_counts2),]
 ```
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
-names(vst_sig)[1] <- "LR2022_25"
-names(vst_sig)[2] <- "LR2022_26"
-names(vst_sig)[3] <- "LR2022_27"
-names(vst_sig)[4] <- "LR2022_28"
-names(vst_sig)[5] <- "LR2022_29"
-names(vst_sig)[6] <- "LR2022_30"
-names(vst_sig)[7] <- "LR2022_32"
-names(vst_sig)[8] <- "LR2022_33"
-names(vst_sig)[9] <- "LR2022_34"
-names(vst_sig)[10] <- "LR2022_35"
-names(vst_sig)[11] <- "LR2022_36"
-names(vst_sig)[12] <- "LR2022_37"
+
+names(vst_sig)[1] <- "LR2022_26"
+names(vst_sig)[2] <- "LR2022_27"
+names(vst_sig)[3] <- "LR2022_28"
+names(vst_sig)[4] <- "LR2022_29"
+names(vst_sig)[5] <- "LR2022_30"
+names(vst_sig)[6] <- "LR2022_32"
+names(vst_sig)[7] <- "LR2022_33"
+names(vst_sig)[8] <- "LR2022_34"
+names(vst_sig)[9] <- "LR2022_35"
+names(vst_sig)[10] <- "LR2022_36"
+
 ```
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
@@ -376,18 +429,71 @@ Heatmap(heat,
 ```
 
 
-## GSEA results
+## GSEA results 5 vs 5 samples 
+
 Gene Set Enrichment analysis of Differential expressed genes filtered by pval <0.01
 Enriched pathways with a pval <0.05:
-```{r pressure, echo=FALSE, out.width = '100%'}
-knitr::include_graphics("/Users/aliciapliego/Projects/FMI_RNAseq/BRAF/report/RNAseq-BRAF/images/GSEA_plot.png")
+### Hallmarks
+```{r , echo=FALSE, out.width = '100%'}
+knitr::include_graphics("/Users/aliciapliego/Projects/FMI_RNAseq/BRAF/report/RNAseq-BRAF/images/GSEA_plot_240522.png")
 ```
 
 Link to enrichment results:
 
-Read more [here](GSEA_180322/index.html) 
+Read more [here](new_GSEA_hallmarks.GseaPreranked.1652823888329/index.html) 
+
+### KEGG
+```{r , echo=FALSE, out.width = '100%'}
+knitr::include_graphics("/Users/aliciapliego/Projects/FMI_RNAseq/BRAF/report/RNAseq-BRAF/images/GSEA_plot_KEGG_240522.png")
+```
+
+Link to enrichment results:
+
+Read more [here](new_GSEA_kegg.GseaPreranked.1652823697095/index.html) 
 
 
+# Pathview
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+require(gage)
+res$entrez <- mapIds(org.Hs.eg.db,
+                     keys = rownames(res),
+                     column = "ENTREZID",
+                     keytype = "SYMBOL",
+                     multiVals = "first")
+res.fc= res$log2FoldChange
+names(res.fc)=res$entrez
+exp.fc=res.fc
+out.suffix="deseq2"
+```
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width= 10, fig.height = 14, fig.align='center'}
+data(kegg.gs)
+fc.kegg.p <- gage(exp.fc, gsets = kegg.gs, ref = NULL, samp = NULL)
+sel <- fc.kegg.p$greater[, "q.val"] < 0.1 & + !is.na(fc.kegg.p$greater[, "q.val"])
+path.ids <- rownames(fc.kegg.p$greater)[sel]
+sel.l <- fc.kegg.p$less[, "q.val"] < 0.1 & + !is.na(fc.kegg.p$less[,"q.val"])
+path.ids.l <- rownames(fc.kegg.p$less)[sel.l]
+path.ids2 <- substr(c(path.ids, path.ids.l), 1, 8)
+require(pathview)
+#view first 3 pathways as demo
+pv.out.list <- sapply("hsa04330", function(pid) pathview(gene.data = exp.fc, pathway.id = pid, species = "hsa", out.suffix=out.suffix))
+```
+
+### WNT signaling
+```{r , echo=FALSE, out.width = '100%'}
+knitr::include_graphics("/Users/aliciapliego/Projects/FMI_RNAseq/BRAF/report/RNAseq-BRAF/images/hsa04310.deseq2.png")
+```
+### NOTCH signaling
+```{r , echo=FALSE, out.width = '100%'}
+knitr::include_graphics("/Users/aliciapliego/Projects/FMI_RNAseq/BRAF/report/RNAseq-BRAF/images/hsa04330.deseq2.png")
+```
+
+### TGFB signaling
+
+```{r , echo=FALSE, out.width = '100%'}
+knitr::include_graphics("/Users/aliciapliego/Projects/FMI_RNAseq/BRAF/report/RNAseq-BRAF/images/hsa04350.deseq2.png")
+```
 # Cluster Profiles
 
 ## GO Enrichment
@@ -400,7 +506,7 @@ original_gene_list = res$log2FoldChange
 names(original_gene_list) <- rownames(res)
 
 # omit any NA values 
-gene_list<-na.omit(original_gene_list)
+gene_list <-na.omit(original_gene_list)
 
 # sort the list in decreasing order (required for clusterProfiler)
 gene_list = sort(gene_list, decreasing = TRUE)
