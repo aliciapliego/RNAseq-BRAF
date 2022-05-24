@@ -477,14 +477,17 @@ path.ids.l <- rownames(fc.kegg.p$less)[sel.l]
 path.ids2 <- substr(c(path.ids, path.ids.l), 1, 8)
 require(pathview)
 #view first 3 pathways as demo
-pv.out.list <- sapply("hsa04330", function(pid) pathview(gene.data = exp.fc, pathway.id = pid, species = "hsa", out.suffix=out.suffix))
+pv.out.list <- sapply("hsa04010", function(pid) pathview(gene.data = exp.fc, pathway.id = pid, species = "hsa", out.suffix=out.suffix))
 ```
 
 ### WNT signaling
+
 ```{r , echo=FALSE, out.width = '100%'}
 knitr::include_graphics("/Users/aliciapliego/Projects/FMI_RNAseq/BRAF/report/RNAseq-BRAF/images/hsa04310.deseq2.png")
 ```
+
 ### NOTCH signaling
+
 ```{r , echo=FALSE, out.width = '100%'}
 knitr::include_graphics("/Users/aliciapliego/Projects/FMI_RNAseq/BRAF/report/RNAseq-BRAF/images/hsa04330.deseq2.png")
 ```
@@ -494,6 +497,13 @@ knitr::include_graphics("/Users/aliciapliego/Projects/FMI_RNAseq/BRAF/report/RNA
 ```{r , echo=FALSE, out.width = '100%'}
 knitr::include_graphics("/Users/aliciapliego/Projects/FMI_RNAseq/BRAF/report/RNAseq-BRAF/images/hsa04350.deseq2.png")
 ```
+
+### MAPK signaling
+
+```{r , echo=FALSE, out.width = '100%'}
+knitr::include_graphics("/Users/aliciapliego/Projects/FMI_RNAseq/BRAF/report/RNAseq-BRAF/images/hsa04010.deseq2.png")
+```
+
 # Cluster Profiles
 
 ## GO Enrichment
