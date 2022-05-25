@@ -199,6 +199,18 @@ fig
 ### Counts of most differentially expressed gene
 
 
+```{r plotcounts wnt5a, echo=FALSE, warning=FALSE, message=FALSE, fig.width= 5, fig.height = 5, fig.align='center'}
+# Save plotcounts to a data frame object
+d <- plotCounts(dds, gene="PTEN", intgroup="Treatment", returnData=TRUE)
+
+# Plotting the CTNNB1 normalized counts, using the samplenames (rownames of d as labels)
+ggplot(d, aes(x = Treatment, y = count, color = Treatment)) + 
+  geom_point(position=position_jitter(w = 0.1,h = 0)) +
+  geom_text_repel(aes(label = rownames(d))) + 
+  theme_bw() +
+  ggtitle("PTEN") +
+  theme(plot.title = element_text(hjust = 0.5))
+```
 
 ```{r plotcounts wnt5a, echo=FALSE, warning=FALSE, message=FALSE, fig.width= 5, fig.height = 5, fig.align='center'}
 # Save plotcounts to a data frame object
@@ -246,8 +258,9 @@ plotCounts(dds, gene="NOTCH2", intgroup="Treatment")
 plotCounts(dds, gene="SMAD4", intgroup="Treatment")
 ```
 
+- Posible compensatory mechanism:
 
-GATA6 upregulation could lead to the downregulation of FZD4 by recruiting EZH2 and inhibition or downregulation of WNT/ beta catening pathway.
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6387042/
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width= 8, fig.height = 5, fig.align='center'}
 # Save plotcounts to a data frame object
@@ -256,7 +269,7 @@ par(mfrow=c(1,3))
 
 plotCounts(dds, gene="FZD4", intgroup="Treatment")
 plotCounts(dds, gene="GATA6", intgroup="Treatment")
-plotCounts(dds, gene="EZH2", intgroup="Treatment")
+plotCounts(dds, gene="PORCN", intgroup="Treatment")
 ```
 
 
@@ -283,7 +296,7 @@ plotCounts(dds, gene="JAG1", intgroup="Treatment")
 plotCounts(dds, gene="JAG2", intgroup="Treatment")
 plotCounts(dds, gene="DLL1", intgroup="Treatment")
 plotCounts(dds, gene="DLL4", intgroup="Treatment")
-plotCounts(dds, gene="NOTCH3", intgroup="Treatment")
+plotCounts(dds, gene="DKK1", intgroup="Treatment")
 ```
 
 
@@ -300,17 +313,38 @@ plotCounts(dds, gene="SMAD2", intgroup="Treatment")
 plotCounts(dds, gene="PTEN", intgroup="Treatment")
 ```
 
+-Alternative compensatory mechanism:
+  Down regulation of PTEN which is an inhibitor of the mTOR pathway may lead to an upregulation of MTOR and cell proliferation.
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width= 8, fig.height = 5, fig.align='center'}
+# Save plotcounts to a data frame object
+
+par(mfrow=c(2,3))
+
+plotCounts(dds, gene="GSK3B", intgroup="Treatment")
+plotCounts(dds, gene="PIK3CA", intgroup="Treatment")
+plotCounts(dds, gene="PTEN", intgroup="Treatment")
+plotCounts(dds, gene="RPTOR", intgroup="Treatment")
+plotCounts(dds, gene="IKBKB", intgroup="Treatment")
+
+```
+
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2418585/
+
+It has been shown in prostate cancer that downregulation of PTEN might lead to mTOR pathway downstream from Akt controls NF-kB. In the clones, we can see duplications of NFKB
+, and enrichment in the NF-KB pathway.
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width= 8, fig.height = 5, fig.align='center'}
 # Save plotcounts to a data frame object
 
 par(mfrow=c(1,3))
 
-plotCounts(dds, gene="GSK3B", intgroup="Treatment")
-plotCounts(dds, gene="PIK3CA", intgroup="Treatment")
-plotCounts(dds, gene="PTEN", intgroup="Treatment")
+plotCounts(dds, gene="AKT1", intgroup="Treatment")
+plotCounts(dds, gene="MTOR", intgroup="Treatment")
+plotCounts(dds, gene="MAP2K1", intgroup="Treatment")
 ```
 
+- Additionally, WNT pathways 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 # Further filter DE genes based on Padj = 0.01,  and FC>1.5(L2FC = 0.58)
 res_filtered_pval <- subset(res05, padj <0.01)
