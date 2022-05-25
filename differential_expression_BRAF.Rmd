@@ -199,7 +199,7 @@ fig
 ### Counts of most differentially expressed gene
 
 
-```{r plotcounts wnt5a, echo=FALSE, warning=FALSE, message=FALSE, fig.width= 5, fig.height = 5, fig.align='center'}
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width= 5, fig.height = 5, fig.align='center'}
 # Save plotcounts to a data frame object
 d <- plotCounts(dds, gene="PTEN", intgroup="Treatment", returnData=TRUE)
 
@@ -212,7 +212,7 @@ ggplot(d, aes(x = Treatment, y = count, color = Treatment)) +
   theme(plot.title = element_text(hjust = 0.5))
 ```
 
-```{r plotcounts wnt5a, echo=FALSE, warning=FALSE, message=FALSE, fig.width= 5, fig.height = 5, fig.align='center'}
+```{r , echo=FALSE, warning=FALSE, message=FALSE, fig.width= 5, fig.height = 5, fig.align='center'}
 # Save plotcounts to a data frame object
 d <- plotCounts(dds, gene="WNT5A", intgroup="Treatment", returnData=TRUE)
 
@@ -341,10 +341,10 @@ par(mfrow=c(1,3))
 
 plotCounts(dds, gene="AKT1", intgroup="Treatment")
 plotCounts(dds, gene="MTOR", intgroup="Treatment")
-plotCounts(dds, gene="MAP2K1", intgroup="Treatment")
+plotCounts(dds, gene="NFATC1", intgroup="Treatment")
 ```
 
-- Additionally, WNT pathways 
+- Additionally, WNT pathway we can see an upregulation of Frizzle genes and WNT5A and a downregulation of NFAT gene.
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 # Further filter DE genes based on Padj = 0.01,  and FC>1.5(L2FC = 0.58)
 res_filtered_pval <- subset(res05, padj <0.01)
