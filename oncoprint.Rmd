@@ -1,15 +1,20 @@
 ---
-title: "Oncoprint"
-output: html_document
-  theme: sandstone
+title: "oncoprint"
+author: "Alicia Pliego"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    toc_collapsed: true
+    toc_depth: 3
+    number_sections: true
+    theme: sandstone
 ---
 
-
-
-```{r pressure, echo=FALSE, out.width = '100%'}
+```{r , echo=FALSE, out.width = '100%'}
 knitr::include_graphics("/Users/aliciapliego/Projects/FMI_RNAseq/BRAF/report/RNAseq-BRAF/images/oncoprint_BRAF_sabrina-1.png")
 ```
 
-```{r pressure, echo=FALSE, out.width = '100%'}
+```{r second, echo=FALSE, out.width = '100%'}
 knitr::include_graphics("/Users/aliciapliego/Projects/FMI_RNAseq/BRAF/report/RNAseq-BRAF/images/oncoprint_BRAF_organoids_sabrina_140422.pdf")
 ```

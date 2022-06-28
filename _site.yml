@@ -9,6 +9,8 @@ navbar:
       href: de_analysis.html
     - text: "Differential expression"
       href: differential_expression_BRAF.html
+    - text: "Gene Set enrichment"
+      href: gsea.html
 
 output:
   html_document:
