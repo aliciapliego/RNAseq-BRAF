@@ -15,6 +15,7 @@ output:
 knitr::include_graphics("/Users/aliciapliego/Projects/FMI_RNAseq/BRAF/report/RNAseq-BRAF/images/oncoprint_BRAF_sabrina-1.png")
 ```
 
+
 ```{r second, echo=FALSE, out.width = '100%'}
-knitr::include_graphics("/Users/aliciapliego/Projects/FMI_RNAseq/BRAF/report/RNAseq-BRAF/images/oncoprint_BRAF_organoids_sabrina_140422.pdf")
+knitr::include_graphics("/Users/aliciapliego/Projects/FMI_RNAseq/BRAF/report/RNAseq-BRAF/images/oncoprint_braf_v2_AP.pdf")
 ```
