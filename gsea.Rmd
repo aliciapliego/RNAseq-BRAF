@@ -206,8 +206,7 @@ Heatmap(heat,
       row_names_gp = gpar(fontsize = 8))
 ```
 
-Create the named and sorted vector of t-statistics (i.e. for the geneList argument of the gseGO() function).
-
+## GO enrichment
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 gl<-res$stat
 names(gl)<-make.names(res$symbol, unique = T)
