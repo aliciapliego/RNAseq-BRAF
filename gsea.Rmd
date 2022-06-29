@@ -96,6 +96,8 @@ hyper_3genesets<-enricher(gene=resistant_up_genes,
                       maxGSSize = 1000)
 ```
 
+
+
 ## WNT Signaling pathway enrichment
 
 ### Volcano plot of the DE genes belonging to the WNT pathway
@@ -104,13 +106,13 @@ hyper_3genesets<-enricher(gene=resistant_up_genes,
 library(ggplot2)
 library(ggrepel)
 
-sig_genes<-subset(res, res$symbol %in% wnt$gene & res$padj<=0.05)
+sig_genes<-subset(res, res$symbol %in% wnt$gene)
 sig_genes_label<-subset(sig_genes, sig_genes$padj<=0.05)
 
 ggplot(res, aes(x = log2FoldChange,  # 
                      y = -log10(padj))) +
         geom_point(color="grey87")  +
-        ggtitle("Genes belonging to the WNT gene signature") +
+        ggtitle("Genes belonging to the Basal gene signature") +
         theme_bw() +
         geom_text_repel(data = sig_genes_label, 
                         aes(x=log2FoldChange,
@@ -167,8 +169,41 @@ Heatmap(heat,
 
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
-#idType(OrgDb = "org.Hs.eg.db") # to determine allowed gene id type
+# Import wnt gene set:
+mofit<-read.gmt("/Users/aliciapliego/Projects/FMI_RNAseq/BRAF/data/mofit_signature.gmt")
+```
 
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+#idType(OrgDb = "org.Hs.eg.db") # to determine allowed gene id type
+sig_genes<-subset(res, res$symbol %in% mofit$gene)
+sig_genes_label<-subset(sig_genes, sig_genes$padj<=0.05)
+vst_sig <- vst[rownames(vst) %in% rownames(sig_genes_label),]
+```
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+
+names(vst_sig)[1] <- "LR2022_26"
+names(vst_sig)[2] <- "LR2022_27"
+names(vst_sig)[3] <- "LR2022_28"
+names(vst_sig)[4] <- "LR2022_29"
+names(vst_sig)[5] <- "LR2022_30"
+names(vst_sig)[6] <- "LR2022_32"
+names(vst_sig)[7] <- "LR2022_33"
+names(vst_sig)[8] <- "LR2022_34"
+names(vst_sig)[9] <- "LR2022_35"
+names(vst_sig)[10] <- "LR2022_36"
+
+```
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+
+heat <- t(scale(t(vst_sig)))
+```
+
+### Heatmap of the genes belonging to the Mofit pathway
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width= 6, fig.height = 6, fig.align='center'}
+Heatmap(heat, 
+      row_names_gp = gpar(fontsize = 8))
 ```
 
 Create the named and sorted vector of t-statistics (i.e. for the geneList argument of the gseGO() function).
