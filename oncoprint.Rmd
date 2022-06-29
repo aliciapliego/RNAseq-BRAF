@@ -16,6 +16,6 @@ knitr::include_graphics("/Users/aliciapliego/Projects/FMI_RNAseq/BRAF/report/RNA
 ```
 
 
-```{r second, echo=FALSE, out.width = '100%'}
+```{r second, echo=FALSE, out.width = '200%'}
 knitr::include_graphics("/Users/aliciapliego/Projects/FMI_RNAseq/BRAF/report/RNAseq-BRAF/images/oncoprint_braf_v2_AP.png")
 ```
